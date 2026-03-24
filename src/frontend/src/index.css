@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* Navy: #0B3A6A → oklch(0.28 0.09 254) */
+    --school-navy: 0.28 0.09 254;
+    /* Action blue: #1E6FD9 → oklch(0.52 0.18 254) */
+    --school-blue: 0.52 0.18 254;
+    /* Light section bg: #EAF3FB → oklch(0.95 0.03 240) */
+    --school-light: 0.95 0.03 240;
+    /* Page background: #F2F6FA → oklch(0.97 0.015 240) */
+    --school-page: 0.97 0.015 240;
+
+    --background: 0.97 0.015 240;
+    --foreground: 0.12 0.04 254;
+    --card: 1 0 0;
+    --card-foreground: 0.12 0.04 254;
+    --popover: 1 0 0;
+    --popover-foreground: 0.12 0.04 254;
+    --primary: 0.52 0.18 254;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.95 0.03 240;
+    --secondary-foreground: 0.28 0.09 254;
+    --muted: 0.95 0.03 240;
+    --muted-foreground: 0.5 0.02 240;
+    --accent: 0.95 0.03 240;
+    --accent-foreground: 0.28 0.09 254;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.025 240;
+    --input: 0.88 0.025 240;
+    --ring: 0.52 0.18 254;
+    --chart-1: 0.52 0.18 254;
+    --chart-2: 0.65 0.15 200;
+    --chart-3: 0.75 0.12 160;
+    --chart-4: 0.7 0.18 30;
+    --chart-5: 0.65 0.2 300;
+    --sidebar: 0.28 0.09 254;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.52 0.18 254;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.35 0.1 254;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.35 0.1 254;
+    --sidebar-ring: 0.52 0.18 254;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+}
